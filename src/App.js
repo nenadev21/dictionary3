@@ -7,7 +7,6 @@ function App() {
     <div className="App">
       <Layout>
         <Dictionary />
-        <p>Testing something</p>
       </Layout>
     </div>
   );
