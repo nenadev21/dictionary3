@@ -41,7 +41,7 @@ function SearchBar() {
               <i className="fas fa-search"></i>
             </span>
           </p>
-          <p className="help">
+          <p className="help" style={{ color: "white" }}>
             Get definitions, synonyms, translations, and more
           </p>
         </div>
