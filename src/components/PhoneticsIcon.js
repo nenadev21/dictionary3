@@ -1,8 +1,8 @@
 function PhoneticsIcon({ audio }) {
   return (
     <div>
-      {/* <i className="fas fa-volume-up" />
-      <p> {audio} </p> */}
+      <i className="fas fa-volume-up" />
+      <p> {audio} </p>
     </div>
   );
 }
