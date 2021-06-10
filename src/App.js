@@ -1,12 +1,12 @@
-import "./App.css";
 import Layout from "./components/layout/Layout";
-import Dictionary from "./components/Dictionary";
+import SearchBar from "./components/SearchBar";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <Layout>
-        <Dictionary />
+        <SearchBar />
       </Layout>
     </div>
   );

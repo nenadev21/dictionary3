@@ -1,13 +1,7 @@
-import Card from "./ui/Card";
+import classes from "./Definitions.module.css";
 
 function Definitions({ definition }) {
-  return (
-    <Card>
-      <div>
-        <p style={{ color: "blue" }}>{definition.definition}</p>
-      </div>
-    </Card>
-  );
+  return <div className={classes.definition}>{definition.definition}</div>;
 }
 
 export default Definitions;
