@@ -3,25 +3,26 @@ import PartOfSpeech from "./PartOfSpeech";
 import Definitions from "./Definitions";
 import Examples from "./Examples";
 // import Synonyms from "./Synonyms";
+import Card from "./ui/Card";
+import classes from "./ResultDisplay.module.css";
 
 function ResultDisplay({ meaning }) {
   console.log(`displaying ${meaning}`);
 
   return (
-    <div className="search-results">
-      <PartOfSpeech speech={meaning.partOfSpeech} />
-      {meaning.definitions.map(function (definition, index) {
-        return (
-          <div key={index}>
-            <p>
+    <Card>
+      <div className="results">
+        <PartOfSpeech speech={meaning.partOfSpeech} />
+        {meaning.definitions.map(function (definition, index) {
+          return (
+            <div key={index}>
               <Definitions definition={definition} />
-              <br />
               <Examples examples={definition} />
-            </p>
-          </div>
-        );
-      })}
-    </div>
+            </div>
+          );
+        })}
+      </div>
+    </Card>
   );
 }
 

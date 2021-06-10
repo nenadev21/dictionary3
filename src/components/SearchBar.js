@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Results from "./Results";
 import axios from "axios";
+import classes from "./SearchBar.module.css";
 
 function SearchBar() {
   const [keyword, keywordState] = useState("");
@@ -25,12 +26,13 @@ function SearchBar() {
   //url: https://api.dictionaryapi.dev/api/v2/entries/<language_code>/<word>
 
   return (
-    <div className="search-bar">
+    <div className={classes.search}>
+      <h2 className={classes.prompt}> What word do you want to look up?</h2>
       <form onSubmit={search}>
         <div className="field">
           <p className="control has-icons-right">
             <input
-              className="input is-rounded is-large"
+              className="input is-rounded"
               type="search"
               placeholder="Search for a word"
               onChange={handleKeywordChange}
@@ -39,7 +41,7 @@ function SearchBar() {
               <i className="fas fa-search"></i>
             </span>
           </p>
-          <p className="help" style={{ color: "white" }}>
+          <p className={classes.helper}>
             Get definitions, synonyms, translations, and more
           </p>
         </div>
