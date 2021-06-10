@@ -6,14 +6,18 @@ import Examples from "./Examples";
 
 function ResultDisplay({ meaning }) {
   console.log(`displaying ${meaning}`);
+
   return (
-    <div className="search-results" style={{ maxWidth: "800px" }}>
+    <div className="search-results">
       <PartOfSpeech speech={meaning.partOfSpeech} />
       {meaning.definitions.map(function (definition, index) {
         return (
           <div key={index}>
-            <Definitions definition={definition} />
-            <Examples examples={definition} />
+            <p>
+              <Definitions definition={definition} />
+              <br />
+              <Examples examples={definition} />
+            </p>
           </div>
         );
       })}
