@@ -1,7 +1,10 @@
-import classes from "./Examples.module.css";
-
 function Examples({ examples }) {
-  return <div className={classes.example}> {examples.example}</div>;
+  return (
+    <div className="is-italic has-text-weight-semibold">
+      {" "}
+      {examples.example}
+    </div>
+  );
 }
 
 export default Examples;

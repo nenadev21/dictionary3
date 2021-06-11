@@ -1,7 +1,5 @@
-import classes from "./PartOfSpeech.module.css";
-
 function PartOfSpeech({ speech }) {
-  return <div className={classes.speech}>{speech}</div>;
+  return <div className="is-capitalized has-text-weight-bold">{speech}</div>;
 }
 
 export default PartOfSpeech;

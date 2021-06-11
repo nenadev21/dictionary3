@@ -1,6 +1,6 @@
 import ResultDisplay from "./ResultDisplay";
 
-function Results({ results }) {
+function Results({ results, obtainedPhotos }) {
   if (results) {
     return (
       <div>
