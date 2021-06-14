@@ -1,0 +1,22 @@
+.social-media li {
+  display: inline-block;
+  padding: 8px;
+}
+
+.social-media {
+  font-size: medium;
+  margin: 0 auto;
+  font-size: small;
+  color: rgba(39, 33, 66, 0.7);
+  text-align: center;
+  margin: 20px;
+}
+
+.social-media .social-media-link {
+  color: #00D1B2;
+  text-decoration: none;
+}
+
+.git-hub {
+    padding-bottom: 20px;
+}
